@@ -1,5 +1,6 @@
 ---
 typora-copy-images-to: ../assets/images
+typora-root-url: ../
 ---
 
 # Creación de GitHub Pages
@@ -10,17 +11,17 @@ typora-copy-images-to: ../assets/images
 
 1. Entra en tu cuenta de [Github](https://github.com) y crea un repositorio nuevo pulsando en el "+" arriba a la derecha y en "New repository"
 
-   ![image-20211026170915346](../assets/images/image-20211026170915346.png)
+   ![image-20211026170915346](assets/images/image-20211026170915346.png)
 
 2. En el nombre del repositorio usa el formato `username.github.io` donde `username` es tu nombre usuario de `GitHub` 
 
-   ![image-20211026171022781](../assets/images/image-20211026171022781.png)
+   ![image-20211026171022781](assets/images/image-20211026171022781.png)
 
    *En mi caso me dice que ya existe porque ya lo tengo creado*
 
 3. Pulsa el botón "Create repository"
 
-   ![image-20211026170957349](../assets/images/image-20211026170957349.png)
+   ![image-20211026170957349](assets/images/image-20211026170957349.png)
 
 ## Clonar el repositorio para trabajar localmente
 
