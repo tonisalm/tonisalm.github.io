@@ -44,13 +44,13 @@ typora-root-url: ../
 
 1. En el terminal, dentro de tu directorio local del proyecto, escribe lo siguiente:
 
-````
-git add *
-git commit -m "Primer commit"
-git push
-````
+   ```
+   git add *
+   git commit -m "Primer commit"
+   git push
+   ```
 
-​	*Te pedirá tus datos de usuario y token para subir el contenido*
+   *Te pedirá tus datos de usuario y token para subir el contenido*
 
 2. Si todo ha ido bien, ve al navegador e introduce la dirección de tu proyecto, por ejemplo: https://tonisalm.github.io/
 
