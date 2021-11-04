@@ -1,6 +1,7 @@
 ---
 typora-copy-images-to: ../assets/images
 typora-root-url: ../
+title: Creación de GitHub Pages
 ---
 
 # Creación de GitHub Pages
