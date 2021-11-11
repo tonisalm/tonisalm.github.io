@@ -41,3 +41,36 @@ En el entorno de desarrollo local o localhost el codigo de la aplicación se man
 
 El proceso de mover una aplicación web desde localhost a un servidor web se denomina despliegue.
 
+En el momento que se desplega la aplicación en un servidor web se dispone de una versión públicamente disponible para cualquier usuario y al mismo tiempo se sigue disponiendo de la versión privada donde se usa para retocar y probar posible nuevo contenido.
+
+## Caso real de despliege de aplicaciones web (Storyblocks)
+
+![web-arch](/assets/images/web-arch.png)
+
+
+
+En este caso se excpone el proceso de busqueda en google de una imagen donde en el navegador se mustra como primera opción Storyblocks, si el usuario eliga está opción entonces el usuario envia una solicitud al servidor DNS para buscar como conectarse al sitio web. La silicitud enviada llega al balanceador de carga  para elegir el servidor más adecuado del sitio web. El servidor muestra la vista como html y luego la envía al navegador del usuario pasando a través del equilibrador de carga y al final muestra la página al usuario.
+
+A continuación se expone la estructura de la aplicación web Storyblocks:
+
+- DNS: Que proporciona una búsqueda de clave / valor  desde un nombre de dominio a una dirección IP, ya que la dns es necesaria para que el ordenador del usuario enrute una solicitud al servidor de la página de busqueda.
+
+- Balanceador de carga: Enrutan las solicitudes entrantes a uno de los servidores de la aplicación web y envían la respuesta desde el servidor de la aplicación al usuario.
+
+- Servidores de aplicaciones web: Reciben la solicitud de un usuario y envían de vuelta un html al navegador del usuario que realiza la busqueda.
+
+- Servidores de bases de datos: Es donde la aplicación web almacena la información que ha solicitado el usuario a la hora de realizar la busqueda.
+
+- Servicio de caché: Se aprovecha para guardar los resultados de los cálculos costosos.
+
+- Servicio de búsqueda de texto completo: Es una función que el servidor de la aplicación web ofrece para facilitar la busqueda del usuario e forma más rápida.
+- Servicios.
+- Datos.
+- Almacenamiento en la nube: Es una forma para almacenar las entradas de busqueda de los usuarios para posibles futuras busquedas de los mismos.
+
+
+
+---
+
+
+
