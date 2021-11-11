@@ -8,16 +8,56 @@ title: Resumen Arquitectura Web
 
 ## 1 Introducción
 
-En este tema trataremos los conceptos generales de una aplicación  web, así como las tendencias actuales relativas a las tecnologías más  usadas en el desarrollo de aplicaciones web dinámicas.
+En informática, la World Wide Web (www) es un sistema de distribución de documentos electrónicos escritos en HTML (HyperText Markup Language) llamados páginas web, que se enlazan entre sí a través de hiperenlaces (links). Las páginas web pueden contener imágenes, textos, audio, vídeo y otros contenidos.
 
-## 2 Conceptos generales de arquitectura web
+Normalmente las páginas web se agrupan en sitios web, compartiendo la primera parte de la dirección web (el dominio). Ejemplos:
 
-En esta unidad aprenderemos los siguientes conceptos.
+- [https://www.ieselcaminas.org](http://www.ieselcaminas.org): Sitio web del Instituto
+- [https://es.wikipedia.org](http://es.wikipedia.org): Sitio web de la Wikipedia en español
 
-1. Qué es una aplicación web
-2. Qué tecnologías se pueden utilizar para crear una aplicación web
-3. Qué es un servidor web
-4. Y, finalmente, en qué consiste el despliegue de una aplicación Web
+## 2 Aplicaciones web
+
+### 2.1 ¿Qué es una aplicación web? Beneficios
+
+Es una aplicación software que se utiliza accediendo a un servidor web mediante un navegador web. Sus beneficios respecto a las aplicaciones tradicionales son:
+
+- Multiplataforma y multiusuario, aumentan su versatilidad.
+- Gestión y mantenimiento centralizado, reducen costes.
+- Datos centralizados, facilitan el acceso y el control.
+
+### 2.2 Procesamiento de las aplicaciones web. Servidor.
+
+Una aplicación web consiste en un conjunto de páginas web **estáticas** (se envían al navegador sin modificar su diseño original) y **dinámicas** (según la interacción con el usuario, son procesadas y modificadas antes de enviarlas).
+
+![Fig.1 - Webs estaticas y dinámicas](https://emprendecontuweb.com/wp-content/uploads/2018/07/web-server-2.jpg)*Fig.1 - Webs estáticas y dinámicas ([fuente](https://emprendecontuweb.com/algunos-conceptos-basicos-en-diseno-web/))*
+
+Cuando el servidor web recibe una petición para mostrar una página web dinámica, la transfiere al **servidor de aplicaciones**, que se encarga de buscar instrucciones en la página recibida, procesarlas y montar la página que se enviará finalmente al navegador.
+
+#### 2.2.1 Páginas dinámicas con acceso a bases de datos
+
+El uso de una base de datos para almacenar contenido permite separar el diseño del sitio web del contenido que se desea mostrar, de modo que sólo se necesita escribir una página para mostrar diferentes datos a diferentes usuarios.
+
+Cuando se requieren datos de la base de datos, el servidor de aplicaciones realiza una consulta al controlador de la base de datos en lenguaje SQL y éste le devuelve los registros correspondientes, que se emplean para completar la página.
+
+![Modelo servidor aplicaciones externo](https://javiergarciaescobedo.es/images/stories/despliegue_web/01_implantacion/Modelo_servidor_aplicaciones_externo.png)*Fig.2 - Acceso a base de datos ([fuente](https://javiergarciaescobedo.es/despliegue-de-aplicaciones-web/76-arquitecturas-web/253-modelos-de-arquitecturas-web))*
+
+### 2.3. Visualización de páginas. Lado del cliente
+
+Desde el punto de vista del **cliente web** (generalmente el navegador) las páginas que componen una aplicación web también se pueden dividir en estáticas y dinámicas.
+
+- **Estáticas**: el contenido visualizado por el cliente no cambia (puede cambiar de página, pero no cambia la página en sí)
+- **Dinámicas**: el contenido visualizado cambia dentro de la misma página, usando técnicas de manipulación del DOM y peticiones asíncronas (Single Page Application)
+
+#### 2.3.1 Generadores de sitios estáticos (**SSG**) 
+
+Los generadores de sitios estáticos funcionan convirtiendo texto simple y con formato ligero (generalmente [markdown](https://es.wikipedia.org/wiki/Markdown)) en sitios web, aplicando datos y contenido a las plantillas y generando una vista de una página, lo que facilita mucho servir el contenido, bien desde un servidor web simplificado o una red de distribución de contenido (CDN).
+
+Además tienen una ventaja muy importante desde el punto de vista de la seguridad: simplifican mucho la infraestructura involucrada en servir el contenido, de modo que se minimizan los vectores de ataque.
+
+![Flujo en SSG](https://victorponz.github.io/Ciberseguridad-PePS/assets/img/AWCG/ssg-host-flow.png)*Fig.3 - Flujo en SSG ([fuente](https://victorponz.github.io/Ciberseguridad-PePS/tema1/http/2020/11/04/Arquitectura-web-Conceptos-generales.html#34-aplicaci%C3%B3n-web))*
+
+Algunos ejemplos de SSG son por ejemplo: [Jekill](http://jekyllrb.com/), [Hexo](https://hexo.io/), [Hugo](http://gohugo.io/), [Pelican](http://getpelican.com/), [Middleman](https://middlemanapp.com/), [Metalsmith](http://www.metalsmith.io/), [Ghost](https://ghost.org/)... Y una de las **mayores plataformas para desplegar** Stactic Site Generators es https://www.netlify.com/
+
 
 ## 5 Servidores web y de aplicaciones
 
@@ -34,6 +74,7 @@ El servidor web no proporiciona ninguna funcionalidad más que proporicionar un 
 El servidor de aplicaciones proporiciona acceso a la lógica empresarial para su uso por los programas de aplicación del cliente.
 
 ## 6 Despliegue de Aplicaciones web
+
 
 Cuando se crea una aplicación weben el ordenador se suele hacer en entorno de desarrollo al que solo se puede acceder desde el mismo ordenador.
 
