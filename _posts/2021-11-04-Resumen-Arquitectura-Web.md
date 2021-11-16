@@ -82,6 +82,8 @@ En el entorno de desarrollo local o localhost el codigo de la aplicación se man
 
 El proceso de mover una aplicación web desde localhost a un servidor web se denomina despliegue.
 
+El proceso de mover una aplicación web desde localhost a un servidor web se denomina despliegue.
+
 En el momento que se desplega la aplicación en un servidor web se dispone de una versión públicamente disponible para cualquier usuario y al mismo tiempo se sigue disponiendo de la versión privada donde se usa para retocar y probar posible nuevo contenido.
 
 ## Caso real de despliege de aplicaciones web (Storyblocks)
