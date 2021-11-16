@@ -86,9 +86,7 @@ En el momento que se desplega la aplicación en un servidor web se dispone de un
 
 ## Caso real de despliege de aplicaciones web (Storyblocks)
 
-![web-arch](/assets/images/web-arch.png)
-
-
+![web-arch](../assets/images/web-arch.png)
 
 En este caso se excpone el proceso de busqueda en google de una imagen donde en el navegador se mustra como primera opción Storyblocks, si el usuario eliga está opción entonces el usuario envia una solicitud al servidor DNS para buscar como conectarse al sitio web. La silicitud enviada llega al balanceador de carga  para elegir el servidor más adecuado del sitio web. El servidor muestra la vista como html y luego la envía al navegador del usuario pasando a través del equilibrador de carga y al final muestra la página al usuario.
 
