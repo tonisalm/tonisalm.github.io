@@ -58,6 +58,15 @@ Además tienen una ventaja muy importante desde el punto de vista de la segurida
 
 Algunos ejemplos de SSG son por ejemplo: [Jekill](http://jekyllrb.com/), [Hexo](https://hexo.io/), [Hugo](http://gohugo.io/), [Pelican](http://getpelican.com/), [Middleman](https://middlemanapp.com/), [Metalsmith](http://www.metalsmith.io/), [Ghost](https://ghost.org/)... Y una de las **mayores plataformas para desplegar** Stactic Site Generators es https://www.netlify.com/
 
+## 3 Tecnologías de desarrollo Web
+
+Hoy en día existe una gran cantidad de tecnologías para desarrollar aplicaciones web, por lo que es importante elegir cuál es la más adecuada para tu proyecto. Existen dos enfoques en el desarrollo de aplicaciones web:
+
+- Creación de aplicaciones web con [integración de tecnologías de desarrollo](https://victorponz.github.io/Ciberseguridad-PePS/tema1/http/2020/11/04/Arquitectura-web-Conceptos-generales.html#41-integración-de-tecnologías-de-desarrollo)
+- Creación de aplicaciones web con [sistemas gestores de contenido](https://victorponz.github.io/Ciberseguridad-PePS/tema1/http/2020/11/04/Arquitectura-web-Conceptos-generales.html#42-sistemas-gestores-de-contenido-cms)
+
+
+
 
 ## 5 Servidores web y de aplicaciones
 
