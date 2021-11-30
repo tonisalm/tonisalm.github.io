@@ -6,7 +6,7 @@ title: Certificado Digital en Apache
 
 # Certificado Digital en Apache
 
-Si te interesa activar HTTPS en Apache para transferir la información de forma segura de manera interna, o bien quieres hacer pruebas antes de poner tu servidor web en producción, puedes crear un certificado SSL auto firmado. Por supuesto, para seguir estos pasos debes disponer de un [servidor Apache ya montado](/2021-11-23-Configuración-básica-de-Apache.md).
+Si te interesa activar HTTPS en Apache para transferir la información de forma segura de manera interna, o bien quieres hacer pruebas antes de poner tu servidor web en producción, puedes crear un certificado SSL auto firmado. Por supuesto, para seguir estos pasos debes disponer de un [servidor Apache ya montado](https://tonisalm.github.io/2021/11/23/Configuraci%C3%B3n-b%C3%A1sica-de-Apache.html).
 
 ## Pasos
 
