@@ -14,7 +14,7 @@ Vamos a simular un ataque de Cross-Site Scripting (XSS) a través de un formular
 
 La forma más básica para introducir datos en una web es mediante un formulario. Vamos a crear uno que lo único que hace es mostrar los datos que se han introducido. Crea el archivo `post.php`con el siguiente contenido y mételo en el directorio del contenedor:
 
-```php+HTML
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -51,7 +51,7 @@ Y accede a `localhost:8080/post.php`. Escribe algo y pulsa "enviar". Verás que 
 
 No podemos confiar en que los usuarios van a introducir los datos que esperamos, siempre va a haber alguien que intente obtener acceso utilizando técnicas de inyección de código, por lo que debemos estar prevenidos. Para ello podemos usar en PHP la función `htmlspecialchars` o `htmlentities`, aunque todavía mejor si usamos un purificador como [HTML Purifier](http://htmlpurifier.org/). Vamos a sanear el código anterior con `htmlspecialchars`:
 
-```php+HTML
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -152,7 +152,7 @@ header('Location: login.php');
 
 Y el archivo `hackeada.php`:
 
-```php+HTML
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
