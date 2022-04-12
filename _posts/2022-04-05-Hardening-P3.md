@@ -1,10 +1,10 @@
 ---
 typora-copy-images-to: ../assets/images/2022-04-05-Hardening-P2/
 typora-root-url: ../
-title: Hardening Práctica 2
+title: Hardening Práctica 3
 ---
 
-# Hardening Práctica 2
+# Hardening Práctica 3
 
 En esta práctica vamos a instalar un firewall de aplicaciones web llamado [Modsecurity](https://es.wikipedia.org/wiki/Mod_Security), al que instalaremos las reglas OWASP, que incluyen de serie una protección bastante buena. Para este propósito, vamos a reutilizar la imagen docker "victima" que creamos en la [práctica anterior](https://tonisalm.github.io/2022/03/15/Validacion.html).
 
