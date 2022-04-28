@@ -51,6 +51,8 @@ trivy image wordpress:4.8.3-php7.0-apache  ## Escanea la imagen
 
 Verás que también sale una cantidad importante de vulnerabilidades, aunque esta imagen no esté pensada para eso como la anterior. En unos años la cosa cambia mucho, por eso es importante estar al día.
 
+### Dependency track
+
 Ahora vamos a escanear la imagen log4shell anterior con [Dependency track](https://tonisalm.github.io/2022/02/22/DependencyTrack.html), otro escáner de vulnerabilidades que ya vimos en una práctica anterior, a partir del BOM generado con [Syft](https://github.com/anchore/syft/):
 
 ```bash
@@ -60,6 +62,8 @@ syft log4shell -o cyclonedx-xml > log4shell-bom.xml
 Ahora carga el fichero xml resultante en Dependency track y recarga la página para ver las vulnerabilidades:
 
 ![image-20220428165036479](/../../../.config/Typora/typora-user-images/image-20220428165036479.png)
+
+### Grype
 
 Por último, escaneamos también con [Grype](https://github.com/anchore/grype/) (del creador de Syft):
 
