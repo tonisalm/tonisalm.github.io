@@ -34,7 +34,7 @@ docker build -t log4shell .
 trivy image log4shell
 ```
 
-![image-20220428160719770](/../../../.config/Typora/typora-user-images/image-20220428160719770.png)
+![image-20220428160719770](/assets/images/2022-04-26-Seguridad-Docker/image-20220428160719770.png)
 
 Aquí sólo vemos dos de las muchas vulnerabilidades detectadas. Podemos ver diferentes campos que indican la librería afectada, la identificación CVE, el nivel de peligrosidad, etc. Si vamos a la dirección que indica en la última columna, podemos ver más info sobre la vulnerabilidad y cómo corregirla (potencialmente):
 
@@ -47,7 +47,7 @@ docker pull wordpress:4.8.3-php7.0-apache  ## Descarga la imagen
 trivy image wordpress:4.8.3-php7.0-apache  ## Escanea la imagen
 ```
 
-![image-20220428161711127](/../../../.config/Typora/typora-user-images/image-20220428161711127.png)
+![image-20220428161711127](/assets/images/2022-04-26-Seguridad-Docker/image-20220428161711127.png)
 
 Verás que también sale una cantidad importante de vulnerabilidades, aunque esta imagen no esté pensada para eso como la anterior. En unos años la cosa cambia mucho, por eso es importante estar al día.
 
@@ -61,13 +61,13 @@ syft log4shell -o cyclonedx-xml > log4shell-bom.xml
 
 Ahora carga el fichero xml resultante en Dependency track y recarga la página para ver las vulnerabilidades:
 
-![image-20220428165036479](/../../../.config/Typora/typora-user-images/image-20220428165036479.png)
+![image-20220428165036479](/assets/images/2022-04-26-Seguridad-Docker/image-20220428165036479.png)
 
 ### Grype
 
 Por último, escaneamos también con [Grype](https://github.com/anchore/grype/) (del creador de Syft):
 
-![image-20220428165735160](/../../../.config/Typora/typora-user-images/image-20220428165735160.png)
+![image-20220428165735160](/assets/images/2022-04-26-Seguridad-Docker/image-20220428165735160.png)
 
 Aquí no tenemos una información tan completa como en Dependency track, pero sólo por la enorme cantidad de recursos que consume, vale la pena usar Grype y luego buscarse la vida con los códigos CVE.
 
