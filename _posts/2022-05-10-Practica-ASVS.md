@@ -12,7 +12,7 @@ A través de la aplicación web de Industrias Fols, los clientes podrán gestion
 
 ## Application Security Verification Level
 
-El objetivo de la aplicación es alcanzar el nivel 1 ASVS.
+Siguiendo [OWASP Application Security Verification Standard](https://raw.githubusercontent.com/OWASP/ASVS/v4.0.3/4.0/OWASP%20Application%20Security%20Verification%20Standard%204.0.3-en.pdf), el nivel objetivo de la aplicación es el nivel 1.
 
 ## V1 Architecture, Design and Threat Modeling
 
@@ -47,8 +47,7 @@ spoofing and elevation of privilege.*
 
 ## V6 Stored Cryptography
 
-*6.2.1 Verify that all cryptographic modules fail securely, and errors are handled in a
-way that does not enable Padding Oracle attacks.*
+*6.2.1 Verify that all cryptographic modules fail securely, and errors are handled in a way that does not enable Padding Oracle attacks.*
 
 - [x] Verificar que los módulos criptográficos manejan los errores de forma segura, evitando ataques *Padding Oracle*.
 
@@ -90,7 +89,7 @@ way that does not enable Padding Oracle attacks.*
 
 ## V13 API and Web Service
 
-*13.3.1 Verify that XSD schema validation takes place to ensure a properly formed XML document, followed by validation of each input field before any processing of that data takes place.*
+*13.3.1 Verify that XSD schema validation takes place to ensure a properly formed XML document, followed by validation of e path traversal.ach input field before any processing of that data takes place.*
 
 - [x] Verificar que se ejecutan validaciones de esquema y campos para documentos XML antes de procesarlos.
 
